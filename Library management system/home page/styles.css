@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+    list-style: none;
+   
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    background:#393280 ;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    box-shadow: 5px  5px 5px  rgba(115, 60, 160, 0.5);
+    overflow-y: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+   
+}
+nav ul{
+    display: flex;
+    gap: 20px;;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.hero{
+    
+    background-color: linear-gradient(185deg, #ffa8b4, #7400f0, #00e06c );
+    padding: 4rem;
+   
+  }
+  .hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .hero-image{
+    margin: -65px;
+  }
+  .hero_content{
+    display: grid;
+    place-items: center;
+  }
+  .hero_content h1{
+    font-size: 5rem;
+    font-weight: bold;
+
+  }
+  .hero h2{
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #393280; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite; 
+    color: #393280;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color:  #393280;;
+    }
+  }
